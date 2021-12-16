@@ -14,7 +14,7 @@
         - Return credentials for users logged in with IdP (Facebook login, Google login, OIDC)
         - AWS recommends against using this, use Cognito instead
     - **GetSessionToken**:
-        - Fro MFA, from an user or AWS account root user
+        - For MFA, from an user or AWS account root user
 
 ## Using STS to Assume a Role
 

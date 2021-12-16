@@ -36,7 +36,7 @@
 - It supports a lot of programming languages
 - Easy monitoring through AWS CloudWatch
 - Easy to get more resources per functions (up to 3GB or RAM)
-- Increasing the RAm will also increase the CPU and network
+- Increasing the RAM will also increase the CPU and network
 - Supported languages:
     - NodeJS (JavaScript)
     - Python
@@ -92,7 +92,7 @@
         - After CloudFront receives a request from a  viewer (viewer request)
         - Before CloudFront receives the request from the origin (origin request)
         - After CloudFront receives the response from the origin (origin response)
-        - Before CloudFront forwards the response to the viewer (viewer response)
+        - Before CloudFront forwards the response to the viewer (viupewer response)
     - Customize the CDN content
 - Use cases:
     - Website security and privacy

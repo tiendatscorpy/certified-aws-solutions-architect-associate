@@ -6,6 +6,7 @@
     - A: map a hostname to IPv4
     - AAAA: map a hostname tp IPv6
     - CNAME: map a hostname to another hostname
+    - NS: Name Servers for the Hosted Zone - control how traffic is routed
     - Alias: map a hostname to an AWS resource
 - Route 53 can use:
     - public domain names we own

@@ -104,23 +104,24 @@
 
 - SQS:
     - Consumers pull data
-    - Data is deleted after being consumed
+    - Data is deleted after being consumed by the consumers
     - Can have many consumers as we want
     - No need to provision throughput
     - No ordering guarantee in case of standard queues
     - Capability to delay individual messages
 - SNS:
     - Pub/Sub: publish data to many subscribers
-    - We can have up to 10 million subscribers per topic
+    - We can have up to 12,5 million subscribers per topic
     - Data is not persisted (it is lost if not delivered)
     - Up to 10k topics per account
     - No need to provision throughput
     - Integrates with SQS for fan-out architecture
+    - FIFO capabilities with SQS FIFO
 - Kinesis Data Streams:
     - Consumers "pull data"
     - We can have as many consumers as we want
     - Possibility to replay data
     - Recommended for real-time big data analytics and ETL
     - Ordering happens at the shard level
+    - Need to specify the number of shards in advance => must provision throughput
     - Data expires after X days
-    - Must provision throughput
